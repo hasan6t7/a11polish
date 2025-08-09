@@ -85,9 +85,10 @@ const Navbar = () => {
                   <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                  <details>
-                    <summary>Dashboard</summary>
-                    <ul className="p-2">
+                  <NavLink to={"/dashboard"}>
+                    Dashboard
+                  </NavLink>
+                    {/* <ul className="p-2">
                       <li>
                         <NavLink to={"/add-services"}>Add Services</NavLink>
                       </li>
@@ -104,8 +105,7 @@ const Navbar = () => {
                       <li>
                         <NavLink to={"service-to-do"}>Service-To-Do</NavLink>
                       </li>
-                    </ul>
-                  </details>
+                    </ul>            */}
                 </li>
                 <li>
                   <NavLink to={"/all-services"}>Services</NavLink>

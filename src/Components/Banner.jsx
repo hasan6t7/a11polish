@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Banner = () => {
   return (
@@ -18,7 +19,11 @@ const Banner = () => {
             service partner. Empowering your business with innovative
             E-solutions. Explore our solutions and boost your productivity.
           </p>
-          <button className="btn bg-purple-900 hover:bg-purple-800 border-none text-white">Get Started</button>
+          <Link to={"/all-services"}>
+            <button className="btn bg-purple-900 hover:bg-purple-800 border-none text-white">
+              Get Started
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ const ServiceCard = ({ service }) => {
           src={service_photo}
           alt=""
         />
-        <h1 className="font-bold text-2xl my-3">{service_name}</h1>
+        <h1 className="font-bold text-2xl  lg:h-[70px] my-3">{service_name}</h1>
         <p className="h-[150px] lg:h-[100px]">
           {truncateText(description, 100)}
         </p>
