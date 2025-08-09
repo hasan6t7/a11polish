@@ -11,7 +11,13 @@ const BookToDo = () => {
 
   return (
     <div>
-      <Suspense fallback={"Loading..."}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center mx-auto min-h-screen">
+            <span className=" loading loading-bars loading-xl"></span>
+          </div>
+        }
+      >
         <MyBookToDo
           bookToDoPromise={bookToDoPromise(user?.email, user?.accessToken)}
         ></MyBookToDo>

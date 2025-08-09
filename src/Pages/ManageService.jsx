@@ -11,8 +11,13 @@ const ManageService = () => {
 
   return (
     <div>
-      
-      <Suspense fallback={"Loading..."}>
+      <Suspense
+        fallback={
+          <div className="flex justify-center items-center mx-auto min-h-screen">
+            <span className=" loading loading-bars loading-xl"></span>
+          </div>
+        }
+      >
         <MyService servicePromise={servicePromise(user?.email)}></MyService>
       </Suspense>
     </div>

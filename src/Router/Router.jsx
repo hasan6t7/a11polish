@@ -12,6 +12,7 @@ import UpdateService from "../Pages/UpdateService";
 import BookedSer from "../Pages/BookedSer";
 import BookToDo from "../Pages/BookToDo";
 import PrivateRouteProvider from "../Provider/PrivateRouteProvider";
+import DashLayout from "../Pages/Dashboard";
 
 const router = createBrowserRouter([
   {
@@ -31,14 +32,7 @@ const router = createBrowserRouter([
         path: "/login",
         Component: Login,
       },
-      {
-        path: "/add-services",
-        element: (
-          <PrivateRouteProvider>
-            <AddServices></AddServices>
-          </PrivateRouteProvider>
-        ),
-      },
+
       {
         path: "/all-services",
         loader: () => fetch("https://e-services-server.vercel.app/services"),
@@ -60,30 +54,7 @@ const router = createBrowserRouter([
           fetch(`https://e-services-server.vercel.app/services/${params.id}`),
         Component: BookService,
       },
-      {
-        path: "/manage-services",
-        element: (
-          <PrivateRouteProvider>
-            <ManageService></ManageService>
-          </PrivateRouteProvider>
-        ),
-      },
-      {
-        path: "/booked-services",
-        element: (
-          <PrivateRouteProvider>
-            <BookedSer></BookedSer>
-          </PrivateRouteProvider>
-        ),
-      },
-      {
-        path: "/service-to-do",
-        element: (
-          <PrivateRouteProvider>
-            <BookToDo></BookToDo>
-          </PrivateRouteProvider>
-        ),
-      },
+
       {
         path: "/update-service/:id",
         loader: ({ params }) =>
@@ -91,6 +62,48 @@ const router = createBrowserRouter([
         element: (
           <PrivateRouteProvider>
             <UpdateService></UpdateService>
+          </PrivateRouteProvider>
+        ),
+      },
+    ],
+  },
+  {
+    path: "/dashboard",
+    element: (
+      <PrivateRouteProvider>
+        <DashLayout></DashLayout>
+      </PrivateRouteProvider>
+    ),
+    children: [
+      {
+        path: "/dashboard/add-services",
+        element: (
+          <PrivateRouteProvider>
+            <AddServices></AddServices>
+          </PrivateRouteProvider>
+        ),
+      },
+      {
+        path: "/dashboard/manage-services",
+        element: (
+          <PrivateRouteProvider>
+            <ManageService></ManageService>
+          </PrivateRouteProvider>
+        ),
+      },
+      {
+        path: "/dashboard/booked-services",
+        element: (
+          <PrivateRouteProvider>
+            <BookedSer></BookedSer>
+          </PrivateRouteProvider>
+        ),
+      },
+      {
+        path: "/dashboard/service-to-do",
+        element: (
+          <PrivateRouteProvider>
+            <BookToDo></BookToDo>
           </PrivateRouteProvider>
         ),
       },

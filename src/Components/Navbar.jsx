@@ -85,27 +85,7 @@ const Navbar = () => {
                   <NavLink to={"/"}>Home</NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/dashboard"}>
-                    Dashboard
-                  </NavLink>
-                    {/* <ul className="p-2">
-                      <li>
-                        <NavLink to={"/add-services"}>Add Services</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/manage-services"}>
-                          Manage Services
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/booked-services"}>
-                          Booked-Services
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"service-to-do"}>Service-To-Do</NavLink>
-                      </li>
-                    </ul>            */}
+                  <NavLink to={"/dashboard"}>Dashboard</NavLink>
                 </li>
                 <li>
                   <NavLink to={"/all-services"}>Services</NavLink>
@@ -145,25 +125,6 @@ const Navbar = () => {
                 </li>
                 <li>
                   <NavLink to={"all-services"}>Services</NavLink>
-                  {/* <details>
-                    <summary>Dashboard</summary>
-                    <ul className="p-2">
-                      <li>
-                        <NavLink to={"/add-services"}>Add Services</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/manage-services"}>Manage Services</NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"/booked-services"}>
-                          Booked-Services
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to={"service-to-do"}>Service-To-Do</NavLink>
-                      </li>
-                    </ul>
-                  </details> */}
                 </li>
                 <li>
                   <NavLink to={"/login"}>Login</NavLink>
@@ -190,25 +151,11 @@ const Navbar = () => {
               <li>
                 <NavLink to={"/"}>Home</NavLink>
               </li>
+
               <li>
-                <details>
-                  <summary>Dashboard</summary>
-                  <ul className="p-2">
-                    <li>
-                      <NavLink to={"/add-services"}>Add Services</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/manage-services"}>Manage Services</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"/booked-services"}>Booked-Services</NavLink>
-                    </li>
-                    <li>
-                      <NavLink to={"service-to-do"}>Service-To-Do</NavLink>
-                    </li>
-                  </ul>
-                </details>
+                <NavLink to={"/dashboard"}>Dashboard</NavLink>
               </li>
+
               <li>
                 <NavLink to={"/all-services"}>Services</NavLink>
               </li>
