@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+@import "tailwindcss";
+@plugin "daisyui";
+
+a.active {
+  color: purple;
+  border-bottom: 2px solid #800080;
+}
+
+.font {
+  font-family: "Lora", serif;
+}
