@@ -32,7 +32,7 @@ const MyBookToDo = ({ bookToDoPromise }) => {
     <div className="mt-10">
       <h1 className="text-4xl text-center font-bold text-purple-700 mb-16">
         <Slide delay={500} triggerOnce>
-          <p> My Booked List</p>
+          <p>Service To Do</p>
         </Slide>
       </h1>
       {bookedToDoData.length > 0 ? (

@@ -13,6 +13,7 @@ import BookedSer from "../Pages/BookedSer";
 import BookToDo from "../Pages/BookToDo";
 import PrivateRouteProvider from "../Provider/PrivateRouteProvider";
 import DashLayout from "../Pages/Dashboard";
+import DashboardHome from "../Pages/DashHome";
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       </PrivateRouteProvider>
     ),
     children: [
+      {
+        index: true,
+        element: <DashboardHome></DashboardHome>,
+      },
       {
         path: "/dashboard/add-services",
         element: (

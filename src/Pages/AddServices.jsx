@@ -39,7 +39,7 @@ const AddServices = () => {
         <title> Add a Services </title>
         <link rel="canonical" />
       </Helmet>
-      <div className="p-12 text-center space-y-4">
+      <div className="p-5 text-center space-y-4">
         <h1 className="text-5xl font-semibold text-purple-700">
           <Slide triggerOnce>
             <p> Add a Services</p>
