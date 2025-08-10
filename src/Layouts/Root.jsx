@@ -14,7 +14,7 @@ const Root = () => {
         </nav>
       </div>
       <div className="max-w-[95%] mx-auto">
-        <div className="bg-purple-50">
+        <div className="">
           <Outlet></Outlet>
         </div>
       </div>

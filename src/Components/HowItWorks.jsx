@@ -34,7 +34,7 @@ const HowItWorks = () => {
           </span>{" "}
           Way How It Works ?
         </h2>
-        <p className="text-base  text-gray-700 md:text-lg ">
+        <p className="text-base   md:text-lg ">
           An online service order system allows users to select a service,
           submit a request with details, and receive confirmation. The service
           provider is notified, delivers the service at the scheduled time, and
@@ -63,7 +63,7 @@ const HowItWorks = () => {
             <h6 className="mb-2 text-2xl font-extrabold text-purple-700">
               Step 1
             </h6>
-            <p className="max-w-md mb-3 text-sm text-gray-700 sm:mx-auto">
+            <p className="max-w-md mb-3 text-sm sm:mx-auto">
               The user visits the website/app, selects a service (e.g.,
               cleaning, graphic design), fills out the form, and submits the
               request
@@ -71,7 +71,7 @@ const HowItWorks = () => {
 
             <div className="top-0 right-0 flex items-center justify-center h-24 lg:-mr-8 lg:absolute">
               <svg
-                className="w-8 text-gray-700 transform rotate-90 lg:rotate-0"
+                className="w-8  transform rotate-90 lg:rotate-0"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -114,7 +114,7 @@ const HowItWorks = () => {
             <h6 className="mb-2 text-2xl font-extrabold text-purple-700">
               Step 2
             </h6>
-            <p className="max-w-md mb-3 text-sm text-gray-700 sm:mx-auto">
+            <p className="max-w-md mb-3 text-sm  sm:mx-auto">
               The system confirms the order to the user and notifies the service
               provider with the service details (date, location, instructions,
               etc.)
@@ -122,7 +122,7 @@ const HowItWorks = () => {
 
             <div className="top-0 right-0 flex items-center justify-center h-24 lg:-mr-8 lg:absolute">
               <svg
-                className="w-8 text-gray-700 transform rotate-90 lg:rotate-0"
+                className="w-8  transform rotate-90 lg:rotate-0"
                 stroke="currentColor"
                 strokeWidth="2"
                 strokeLinecap="round"
@@ -165,7 +165,7 @@ const HowItWorks = () => {
             <h6 className="mb-2 text-2xl font-extrabold text-purple-700">
               Step 3
             </h6>
-            <p className="max-w-md mb-3 text-sm text-gray-700 sm:mx-auto ">
+            <p className="max-w-md mb-3 text-sm  sm:mx-auto ">
               The service provider completes the service at the scheduled time.
               The user can then give feedback or a rating.
             </p>
