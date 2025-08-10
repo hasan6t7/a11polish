@@ -52,7 +52,7 @@ const MyService = ({ servicePromise }) => {
           <div>NO Post Found</div>
         </>
       ) : (
-        <div className="my-20">
+        <div className="mt-10">
           <h1 className="text-4xl text-center font-bold text-purple-700 mb-16">
             <Slide delay={500} triggerOnce>
               <p> My Services List</p>

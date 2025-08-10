@@ -33,7 +33,7 @@ const AddServices = () => {
   
   };
   return (
-    <div className="p-5 lg:p-24">
+    <div className="p-5 lg:p-12">
       <Helmet>
         <meta charSet="utf-8" />
         <title> Add a Services </title>
