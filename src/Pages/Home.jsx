@@ -7,6 +7,7 @@ import HowItWorks from "../Components/HowItWorks";
 import WhyUse from "../Components/WhyUse";
 import Stats from "../Components/Stats";
 import Features from "./Features";
+import TestimonialSection from "../Components/Testimonials";
 
 const Home = () => {
   const allServices = useLoaderData();
@@ -27,7 +28,7 @@ const Home = () => {
           </h1>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-7 px-2">
           {services.map((service) => (
             <ServiceCard service={service}></ServiceCard>
           ))}
@@ -44,6 +45,7 @@ const Home = () => {
       </div>
       <WhyUse></WhyUse>
       <Features></Features>
+      <TestimonialSection></TestimonialSection>
       <Stats></Stats>
     </div>
   );

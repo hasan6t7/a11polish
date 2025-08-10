@@ -11,7 +11,7 @@ export default function DashboardHome() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3000/dashboard") 
+    fetch("https://e-services-server.vercel.app/dashboard")
       .then((res) => res.json())
       .then((data) => {
         setStats(data);
@@ -24,7 +24,11 @@ export default function DashboardHome() {
   }, []);
 
   if (loading) {
-    return <div className="text-center text-lg">Loading Dashboard...</div>;
+    return (
+      <div className="flex justify-center items-center mx-auto min-h-screen">
+        <span className=" loading loading-bars loading-xl"></span>
+      </div>
+    );
   }
 
   const cards = [
